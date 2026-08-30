@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Award, Search, Filter, ExternalLink } from 'lucide-react';
+import { Award, Search, Filter, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 
 interface Patent {
   id: string;
@@ -119,9 +120,12 @@ const patents: Patent[] = [
 
 const categories = ['All', 'Deepfake Forensics', 'Security & Forensics', 'Multimodal AI', 'Trustworthy AI', 'Biomedical AI', 'Computer Vision', 'Algorithms & Systems'];
 
+const INITIAL_VISIBLE_COUNT = 3;
+
 export default function PatentsSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [showAll, setShowAll] = useState(false);
 
   const filteredPatents = patents.filter(p => {
     const matchesCategory = selectedCategory === 'All' || p.category === selectedCategory;
@@ -130,6 +134,14 @@ export default function PatentsSection() {
                           p.domain.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+
+  const isFiltering = selectedCategory !== 'All' || searchQuery.trim().length > 0;
+  // If actively searching or filtering, show all matches; otherwise respect showAll toggle
+  const displayedPatents = (showAll || isFiltering) 
+    ? filteredPatents 
+    : filteredPatents.slice(0, INITIAL_VISIBLE_COUNT);
+
+  const hasMore = !isFiltering && filteredPatents.length > INITIAL_VISIBLE_COUNT;
 
   return (
     <section id="patents" className="mb-20">
@@ -183,51 +195,83 @@ export default function PatentsSection() {
 
       {/* Grid of Patents */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {filteredPatents.map((patent) => (
-          <div
-            key={patent.id + '-' + patent.num}
-            className="bg-[#0a0a0a] border border-white/10 hover:border-red-600/50 p-5 sm:p-6 rounded-sm flex flex-col justify-between transition-all group relative"
-          >
-            <div>
-              <div className="flex justify-between items-start mb-4">
-                <div className="flex items-center gap-2">
-                  <span className="font-bebas text-3xl text-red-600 leading-none group-hover:text-red-500 transition-colors">
-                    {patent.id}
-                  </span>
-                  <span className="text-[10px] font-mono px-2 py-0.5 bg-[#141414] border border-white/10 text-gray-300 rounded">
-                    {patent.category}
-                  </span>
-                </div>
-                <Award className="w-4 h-4 text-red-600/60 group-hover:text-red-500 transition-colors shrink-0" />
-              </div>
-
-              <h3 className="font-bold text-xs sm:text-sm text-white leading-snug mb-4 group-hover:text-red-300 transition-colors">
-                {patent.title}
-              </h3>
-
-              <div className="space-y-1.5 text-[11px] font-mono text-gray-400 mb-6">
-                <p className="text-gray-500">
-                  <strong className="text-gray-400">Domain:</strong> {patent.domain}
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+        <AnimatePresence>
+          {displayedPatents.map((patent, index) => (
+            <motion.div
+              key={patent.id + '-' + patent.num}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.35, delay: index * 0.05 }}
+              className="bg-[#0a0a0a] border border-white/10 hover:border-red-600/50 p-5 sm:p-6 rounded-sm flex flex-col justify-between transition-all group relative"
+            >
               <div>
-                <span className="text-gray-500 block text-[9px] uppercase tracking-wider">Patent App No.</span>
-                <code className="text-red-400 font-bold tracking-wider">{patent.num}</code>
+                <div className="flex justify-between items-start mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="font-bebas text-3xl text-red-600 leading-none group-hover:text-red-500 transition-colors">
+                      {patent.id}
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 bg-[#141414] border border-white/10 text-gray-300 rounded">
+                      {patent.category}
+                    </span>
+                  </div>
+                  <Award className="w-4 h-4 text-red-600/60 group-hover:text-red-500 transition-colors shrink-0" />
+                </div>
+
+                <h3 className="font-bold text-xs sm:text-sm text-white leading-snug mb-4 group-hover:text-red-300 transition-colors">
+                  {patent.title}
+                </h3>
+
+                <div className="space-y-1.5 text-[11px] font-mono text-gray-400 mb-6">
+                  <p className="text-gray-500">
+                    <strong className="text-gray-400">Domain:</strong> {patent.domain}
+                  </p>
+                </div>
               </div>
-              <div className="text-right">
-                <span className="text-gray-500 block text-[9px] uppercase tracking-wider">Published</span>
-                <span className="text-gray-300">{patent.published}</span>
+
+              <div className="pt-4 border-t border-white/5 flex items-center justify-between font-mono text-[10px]">
+                <div>
+                  <span className="text-gray-500 block text-[9px] uppercase tracking-wider">Patent App No.</span>
+                  <code className="text-red-400 font-bold tracking-wider">{patent.num}</code>
+                </div>
+                <div className="text-right">
+                  <span className="text-gray-500 block text-[9px] uppercase tracking-wider">Published</span>
+                  <span className="text-gray-300">{patent.published}</span>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
 
+      {/* Show More / Show Less Toggle Button */}
+      {hasMore && (
+        <div className="mt-8 flex justify-center">
+          <button
+            onClick={() => setShowAll(true)}
+            className="group px-6 py-3 bg-[#0a0a0a] hover:bg-red-950/30 border border-red-900/60 hover:border-red-500 active:scale-95 text-gray-300 hover:text-white text-xs font-mono font-bold uppercase tracking-[0.2em] rounded-sm flex items-center gap-2.5 transition-all duration-200 shadow-md cursor-pointer"
+          >
+            <span>View All 13 Patents ({patents.length - INITIAL_VISIBLE_COUNT} More)</span>
+            <ChevronDown className="w-4 h-4 text-red-500 group-hover:translate-y-0.5 transition-transform" />
+          </button>
+        </div>
+      )}
+
+      {showAll && !isFiltering && (
+        <div className="mt-8 flex justify-center">
+          <button
+            onClick={() => setShowAll(false)}
+            className="group px-6 py-3 bg-[#0a0a0a] hover:bg-[#141414] border border-white/10 hover:border-white/30 active:scale-95 text-gray-400 hover:text-white text-xs font-mono uppercase tracking-[0.2em] rounded-sm flex items-center gap-2.5 transition-all duration-200 cursor-pointer"
+          >
+            <span>Show Fewer Patents</span>
+            <ChevronUp className="w-4 h-4 text-gray-400 group-hover:-translate-y-0.5 transition-transform" />
+          </button>
+        </div>
+      )}
+
+      {/* Bottom Summary Bar */}
       <div className="mt-8 p-4 bg-[#0a0a0a] border border-white/5 rounded-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono text-gray-400">
-        <span>Showing {filteredPatents.length} of 13 official Indian Patent applications</span>
+        <span>Showing {displayedPatents.length} of {filteredPatents.length} official Indian Patent applications</span>
         <a 
           href="https://orcid.org/0009-0005-6897-6725" 
           target="_blank" 
