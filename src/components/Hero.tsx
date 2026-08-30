@@ -214,7 +214,7 @@ export default function Hero() {
 
             <div className="hidden lg:block border-t border-white/10 w-full max-w-[190px]" />
 
-            {/* Stat 3: 09.5+ BENCHMARK */}
+            {/* Stat 3: 05+ PROJECTS */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -222,11 +222,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row lg:flex-row items-start sm:items-center gap-1.5 sm:gap-3 group cursor-default border-l border-white/10 pl-2 sm:pl-3 lg:border-l-0 lg:pl-0"
             >
               <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl text-red-500 leading-none min-w-[56px] sm:min-w-[68px] group-hover:text-red-400 transition-colors">
-                09.5<span className="text-lg sm:text-xl text-white font-light">+</span>
+                05<span className="text-lg sm:text-xl text-white font-light">+</span>
               </span>
               <p className="text-[9px] sm:text-[10px] text-gray-400 uppercase tracking-[0.18em] leading-tight">
-                BENCHMARK<br />
-                <span className="text-white font-bold tracking-widest">SCORE</span>
+                AI &amp; SYSTEMS<br />
+                <span className="text-white font-bold tracking-widest">PROJECTS</span>
               </p>
             </motion.div>
 
