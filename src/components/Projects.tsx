@@ -1,6 +1,26 @@
 import { Github, ExternalLink, ShieldCheck, Activity, Eye, ArrowUpRight } from 'lucide-react';
 
-const projects = [
+interface ProjectMetric {
+  label: string;
+  val: string;
+}
+
+interface Project {
+  id: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  metrics: ProjectMetric[];
+  description: string;
+  features: string[];
+  techStack: string[];
+  github: string;
+  liveUrl?: string;
+  icon: any;
+  accent: string;
+}
+
+const projects: Project[] = [
   {
     id: '01',
     title: 'Number Spoofing Detection',
@@ -26,26 +46,27 @@ const projects = [
   },
   {
     id: '02',
-    title: 'NeuroTwin-X',
-    subtitle: 'MULTIMODAL BRAIN DIGITAL TWIN & FEDERATED LEARNING',
-    date: 'Oct 2024 – Dec 2024',
+    title: 'NutriCraft',
+    subtitle: 'AI PRECISION NUTRITION & CLINICAL METABOLIC PLATFORM',
+    date: 'Jan 2025 – Present',
     metrics: [
-      { label: 'Accuracy', val: '84.26%' },
-      { label: 'Storage Saved', val: '60–82%' },
-      { label: 'Recon. Error', val: '<0.03%' },
-      { label: 'Clients', val: '10 Nodes' }
+      { label: 'Dataset', val: '200+ Foods' },
+      { label: 'TDEE Precision', val: 'Mifflin-St Jeor' },
+      { label: 'AI Scanner', val: 'Gemini 3.6 Flash' },
+      { label: 'Database', val: 'Turso libSQL' }
     ],
-    description: 'A multimodal Brain Digital Twin framework integrating MRI, EEG, wearable sensor, and clinical records for neurological disease prediction and personalized simulation without centralizing raw medical records.',
+    description: 'An evidence-based, fullstack nutritional intelligence platform combining clinical dietetics with multimodal AI food vision recognition, automated 7-day meal planning, and Turso cloud database persistence.',
     features: [
-      'Closed-loop twin-state compression reducing telemetry storage by 60–82% with <0.03% reconstruction error.',
-      'Privacy-preserving Federated Learning pipeline built with FedAvg and Differential Privacy guarantees.',
-      'Multi-class neurological disease classification spanning 5 diagnostic categories across 10 client nodes.',
-      'Integrated Grad-CAM visual heatmaps and SHAP clinical feature attribution for traceable medical reports.'
+      'Dual-engine AI vision & UPC barcode scanner powered by Google Gemini 3.6 Flash and Open Food Facts with automatic macro extraction.',
+      'Personalized Mifflin-St Jeor metabolic calibration computing individualized BMR, TDEE, and daily macro targets with weight tracking.',
+      '7-Day AI meal planner auto-generating structured dietary regimens with synchronized categorized grocery checklists.',
+      'Interactive Recharts analytics, real-time context-aware AI nutritionist chat, and Nodemailer OTP email verification auth pipeline.'
     ],
-    techStack: ['PyTorch', 'Federated Learning (FedAvg)', 'Differential Privacy', 'Grad-CAM', 'SHAP', 'MRI & EEG Processing'],
-    github: 'https://github.com/pranavsoftware',
+    techStack: ['React 18', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Turso libSQL', 'Google Gemini AI', 'Recharts'],
+    github: 'https://github.com/pranavsoftware/NutriCraft',
+    liveUrl: 'https://nutricraft.raybanpranav.tech/',
     icon: Activity,
-    accent: 'text-rose-500 border-rose-900/50 bg-rose-950/20'
+    accent: 'text-emerald-500 border-emerald-900/50 bg-emerald-950/20'
   },
   {
     id: '03',
@@ -116,7 +137,18 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-mono font-bold text-xs uppercase rounded flex items-center justify-center gap-2 transition-all shadow-sm"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Live Demo</span>
+                  </a>
+                )}
                 <a
                   href={project.github}
                   target="_blank"
