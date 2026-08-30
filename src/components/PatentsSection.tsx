@@ -141,8 +141,6 @@ export default function PatentsSection() {
     ? filteredPatents 
     : filteredPatents.slice(0, INITIAL_VISIBLE_COUNT);
 
-  const hasMore = !isFiltering && filteredPatents.length > INITIAL_VISIBLE_COUNT;
-
   return (
     <section id="patents" className="mb-20">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 pb-6 border-b border-white/10 gap-4">
@@ -244,27 +242,19 @@ export default function PatentsSection() {
         </AnimatePresence>
       </div>
 
-      {/* Show More / Show Less Toggle Button */}
-      {hasMore && (
+      {/* Unified Single Toggle Button */}
+      {!isFiltering && filteredPatents.length > INITIAL_VISIBLE_COUNT && (
         <div className="mt-8 flex justify-center">
           <button
-            onClick={() => setShowAll(true)}
+            onClick={() => setShowAll(!showAll)}
             className="group px-6 py-3 bg-[#0a0a0a] hover:bg-red-950/30 border border-red-900/60 hover:border-red-500 active:scale-95 text-gray-300 hover:text-white text-xs font-mono font-bold uppercase tracking-[0.2em] rounded-sm flex items-center gap-2.5 transition-all duration-200 shadow-md cursor-pointer"
           >
-            <span>View All 13 Patents ({patents.length - INITIAL_VISIBLE_COUNT} More)</span>
-            <ChevronDown className="w-4 h-4 text-red-500 group-hover:translate-y-0.5 transition-transform" />
-          </button>
-        </div>
-      )}
-
-      {showAll && !isFiltering && (
-        <div className="mt-8 flex justify-center">
-          <button
-            onClick={() => setShowAll(false)}
-            className="group px-6 py-3 bg-[#0a0a0a] hover:bg-[#141414] border border-white/10 hover:border-white/30 active:scale-95 text-gray-400 hover:text-white text-xs font-mono uppercase tracking-[0.2em] rounded-sm flex items-center gap-2.5 transition-all duration-200 cursor-pointer"
-          >
-            <span>Show Fewer Patents</span>
-            <ChevronUp className="w-4 h-4 text-gray-400 group-hover:-translate-y-0.5 transition-transform" />
+            <span>{showAll ? 'Show Fewer Patents' : `View All 13 Patents (${filteredPatents.length - INITIAL_VISIBLE_COUNT} More)`}</span>
+            {showAll ? (
+              <ChevronUp className="w-4 h-4 text-red-500 group-hover:-translate-y-0.5 transition-transform" />
+            ) : (
+              <ChevronDown className="w-4 h-4 text-red-500 group-hover:translate-y-0.5 transition-transform" />
+            )}
           </button>
         </div>
       )}
