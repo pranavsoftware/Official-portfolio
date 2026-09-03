@@ -34,7 +34,7 @@ const publications = [
   {
     id: '03',
     title: 'Lip-Sync Authenticity Detection Using Spatial, Spectral, and Deep Learning-Based Feature Fusion',
-    authors: 'Pranav Mahesh Rayban, Ajitesh Sharma, Aarya Ashish Nagvekar, Jaishree Jaikrishnan (Corresponding Author)',
+    authors: 'Pranav Mahesh Rayban, Ajitesh Sharma, Jaishree Jaikrishnan (Corresponding Author)',
     venue: 'Signal, Image and Video Processing (Springer Journal)',
     location: 'International',
     date: 'March 2026',

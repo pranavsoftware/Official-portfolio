@@ -5,7 +5,7 @@ export default function Navbar() {
     <header className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-3.5 text-[10px] text-gray-400 tracking-[0.2em] uppercase mb-4 md:mb-5 pb-3 border-b border-white/10">
       <div className="flex flex-col">
         <p className="text-white font-bold tracking-widest text-xs">RAYBAN PRANAV MAHESH</p>
-        <p className="text-red-500 font-medium text-[10px] tracking-wider">AI/ML ENGINEER · UI/UX CREATOR · RESEARCHER</p>
+        <p className="text-red-500 font-medium text-[10px] tracking-wider">SOFTWARE DEVELOPER · AI/ML ENGINEER · DEEP LEARNING &amp; MLOPS</p>
       </div>
 
       {/* Navigation Links */}

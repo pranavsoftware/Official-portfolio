@@ -49,15 +49,11 @@ export default function ExperienceSection() {
             <ul className="space-y-3 text-xs text-gray-400 leading-relaxed">
               <li className="flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <span>Conducted confidential AI/ML research through the Samsung PRISM program, implementing novel deep learning model architectures and optimization techniques in an industry-grade R&amp;D environment.</span>
+                <span>Conducted confidential <strong>AI/ML research</strong> in the Samsung PRISM program, implementing novel model architectures and optimization techniques in an industry-grade R&amp;D environment.</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <span>Engineered robust machine learning workflows and production-oriented pipelines with rigorous emphasis on reproducibility, model versioning, and research documentation.</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <span>Collaborated with senior industry researchers to evaluate state-of-the-art computational paradigms for high-efficiency on-device neural deployment.</span>
+                <span>Developing production ML pipelines with emphasis on reproducibility, version control, and research documentation practices; credential ID: <code className="text-white">25LAI22VIT51560</code>.</span>
               </li>
             </ul>
           </div>

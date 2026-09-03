@@ -32,14 +32,13 @@ const projects: Project[] = [
       { label: 'ROC-AUC', val: '0.7243' },
       { label: 'Protocol', val: 'Zero-Trust' }
     ],
-    description: 'A 5-layer Zero-Trust AI framework for telecom conference number spoofing detection, integrating cryptographic authentication, behavioral analytics, network forensics, NLP, and voice intelligence.',
+    description: 'Developed a 5-layer Zero-Trust AI framework for telecom conference number spoofing detection, integrating authentication, behavioral analytics, network forensics, NLP, and voice intelligence.',
     features: [
-      'Ensemble ML architecture: Isolation Forest, Random Forest, TF-IDF + Logistic Regression, and Gradient Boosting.',
-      'SHAP-based explainable AI providing granular feature attribution for each flagged call.',
-      'Automated incident response pipeline triggering Allow / Warn / Quarantine / Block protocols.',
-      'Tamper-proof immutable SHA-256 cryptographic audit logs for enterprise security compliance.'
+      'Engineered an ensemble ML architecture (Isolation Forest, Random Forest, TF-IDF + Logistic Regression, Gradient Boosting) with SHAP-based explainability.',
+      'Achieved 90.05% accuracy and 0.7243 ROC-AUC on 49,999 CDRs under an 80/20 stratified train-test split for binary classification on imbalanced spoofed vs. legitimate call records.',
+      'Implemented automated incident response (Allow / Warn / Quarantine / Block) with immutable SHA-256 audit logs for security governance.'
     ],
-    techStack: ['Python', 'Isolation Forest', 'Random Forest', 'Gradient Boosting', 'SHAP', 'TF-IDF', 'Zero-Trust', 'SHA-256'],
+    techStack: ['Python', 'Isolation Forest', 'Random Forest', 'Gradient Boosting', 'SHAP', 'TF-IDF + Logistic Regression', 'Zero-Trust', 'SHA-256'],
     github: 'https://github.com/pranavsoftware',
     icon: ShieldCheck,
     accent: 'text-red-500 border-red-900/50 bg-red-950/20'
@@ -50,19 +49,18 @@ const projects: Project[] = [
     subtitle: 'AI PRECISION NUTRITION & CLINICAL METABOLIC PLATFORM',
     date: 'Jan 2025 – Present',
     metrics: [
-      { label: 'Dataset', val: '200+ Foods' },
-      { label: 'TDEE Precision', val: 'Mifflin-St Jeor' },
-      { label: 'AI Scanner', val: 'Gemini 3.6 Flash' },
-      { label: 'Database', val: 'Turso libSQL' }
+      { label: 'Food Database', val: '200+ Foods' },
+      { label: 'Metabolic Model', val: 'Mifflin-St Jeor' },
+      { label: 'AI Vision Engine', val: 'Gemini 3.6 Flash' },
+      { label: 'Cloud DB', val: 'Turso libSQL' }
     ],
-    description: 'An evidence-based, fullstack nutritional intelligence platform combining clinical dietetics with multimodal AI food vision recognition, automated 7-day meal planning, and Turso cloud database persistence.',
+    description: 'An evidence-based nutritional intelligence platform combining clinical dietetics with multimodal AI vision recognition, automated 7-day meal planning, and Turso cloud database persistence.',
     features: [
-      'Dual-engine AI vision & UPC barcode scanner powered by Google Gemini 3.6 Flash and Open Food Facts with automatic macro extraction.',
-      'Personalized Mifflin-St Jeor metabolic calibration computing individualized BMR, TDEE, and daily macro targets with weight tracking.',
-      '7-Day AI meal planner auto-generating structured dietary regimens with synchronized categorized grocery checklists.',
-      'Interactive Recharts analytics, real-time context-aware AI nutritionist chat, and Nodemailer OTP email verification auth pipeline.'
+      'Dual-engine AI vision & UPC barcode scanner powered by Google Gemini and Open Food Facts with automatic macro extraction.',
+      'Personalized metabolic calibration computing individualized BMR, TDEE, and daily macro targets with weight tracking.',
+      'Interactive Recharts analytics, real-time context-aware AI nutritionist chat, and Nodemailer OTP email verification.'
     ],
-    techStack: ['React 18', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Turso libSQL', 'Google Gemini AI', 'Recharts'],
+    techStack: ['React 18', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Turso libSQL', 'Google Gemini AI'],
     github: 'https://github.com/pranavsoftware/NutriCraft',
     liveUrl: 'https://nutricraft.raybanpranav.tech/',
     icon: Activity,
@@ -71,20 +69,19 @@ const projects: Project[] = [
   {
     id: '03',
     title: 'CryptoVideoAuthenticityNet',
-    subtitle: 'AI VIDEO TAMPER DETECTION & PROVENANCE VERIFICATION',
+    subtitle: 'AI-POWERED VIDEO TAMPER DETECTION & FORENSICS',
     date: 'May 2024 – Jul 2024',
     metrics: [
       { label: 'Benchmark Acc.', val: '99.56%' },
       { label: 'Parameters', val: '52K+' },
       { label: 'Benchmark', val: 'FaceForensics++' },
-      { label: 'Methods', val: '4 Manipulation Types' }
+      { label: 'Manipulations', val: '4 Methods' }
     ],
-    description: 'A multimodal video forensic framework combining cryptographic provenance, FFT frequency analysis, PRNU sensor fingerprinting, and C2PA-inspired validation.',
+    description: 'Developed a multimodal video forensic framework integrating cryptographic verification, FFT frequency analysis, PRNU sensor fingerprinting, and C2PA-inspired provenance validation.',
     features: [
-      'Engineered ultra-lightweight neural classifier AuthenticityNet requiring only 52K+ parameters for real-time inference.',
-      'Achieved 99.56% state-of-the-art forensic accuracy on FaceForensics++ benchmark under 80/10/10 split.',
-      'Detects deepfake face swaps, expression reenactments, and frame-level splices across 4 manipulation types.',
-      'Automated chain-of-custody generation with trust scoring, per-frame spatial heatmaps, and cryptographic audit trails.'
+      'Designed a lightweight AuthenticityNet neural classifier (52K+ parameters) achieving 99.56% accuracy on FaceForensics++ benchmark (80/10/10 train/val/test split).',
+      'Binary authentic vs. tampered classification across 4 manipulation methods.',
+      'Built automated chain-of-custody reporting with trust scores, per-frame localization heatmaps, and cryptographic audit trails for explainable digital investigations.'
     ],
     techStack: ['TensorFlow', 'OpenCV', 'FFT Frequency Analysis', 'PRNU Fingerprinting', 'C2PA Provenance', 'Deep Learning'],
     github: 'https://github.com/pranavsoftware',
@@ -98,8 +95,12 @@ export default function Projects() {
     <section id="projects" className="mb-20">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 sm:mb-12 pb-6 border-b border-white/10 gap-4">
         <div>
-          <span className="text-red-500 font-mono text-[10px] uppercase tracking-[0.25em] block mb-1">Applied Deep Learning &amp; Systems</span>
-          <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-widest">Selected Engineering Projects</h2>
+          <span className="text-red-500 font-mono text-[10px] uppercase tracking-[0.25em] block mb-1">
+            Applied Deep Learning &amp; Zero-Trust Systems
+          </span>
+          <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-widest">
+            Selected Engineering Projects
+          </h2>
         </div>
         <a 
           href="https://github.com/pranavsoftware" 
@@ -126,7 +127,7 @@ export default function Projects() {
                   {project.id}
                 </span>
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2.5 mb-1 flex-wrap">
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-red-400 transition-colors">
                       {project.title}
                     </h3>

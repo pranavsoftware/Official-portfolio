@@ -2,45 +2,45 @@ import { Cpu, Cloud, Code2, Layers, Sparkles, BookOpen } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'AI & Machine Learning',
-    icon: Cpu,
-    skills: [
-      'TensorFlow', 'PyTorch', 'Deep Learning', 'Convolutional Neural Networks (CNNs)',
-      'Computer Vision', 'Natural Language Processing (NLP)', 'Generative AI & LLMs',
-      'Retrieval-Augmented Generation (RAG)', 'Grad-CAM', 'SHAP Explainability',
-      'Federated Learning (FedAvg)', 'Transfer Learning', 'Google Gemini AI'
-    ]
-  },
-  {
-    title: 'Cloud, MLOps & DevOps',
-    icon: Cloud,
-    skills: [
-      'Docker', 'Kubernetes', 'CI/CD Pipelines', 'GitHub Actions', 'Git',
-      'Google Cloud Platform (GCP)', 'Amazon Web Services (AWS)', 'Oracle Cloud Infrastructure',
-      'MongoDB Atlas', 'Model Versioning & Reproducibility', 'Zero-Trust Architecture'
-    ]
-  },
-  {
-    title: 'Programming Languages',
+    title: 'Languages',
     icon: Code2,
     skills: [
-      'Python', 'Java', 'C', 'C++', 'SQL', 'TypeScript', 'JavaScript', 'HTML5 / CSS3'
+      'Python', 'Java', 'C/C++', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS'
     ]
   },
   {
-    title: 'Frameworks & Systems',
+    title: 'AI / Machine Learning',
+    icon: Cpu,
+    skills: [
+      'Deep Learning', 'CNNs', 'NLP', 'Computer Vision', 'Transfer Learning',
+      'Generative AI', 'RAG', 'Grad-CAM', 'SHAP', 'Federated Learning', 'LLM Integration',
+      'Google Gemini AI'
+    ]
+  },
+  {
+    title: 'Frameworks',
     icon: Layers,
     skills: [
-      'FastAPI', 'Flask', 'React', 'React Native', 'Node.js', 'Express.js', 'Firebase'
+      'TensorFlow', 'PyTorch', 'Flask', 'FastAPI', 'React', 'React Native', 'Node.js', 'Express.js', 'Firebase'
+    ]
+  },
+  {
+    title: 'Cloud & DevOps',
+    icon: Cloud,
+    skills: [
+      'Docker', 'Kubernetes', 'Git', 'GitHub Actions', 'CI/CD', 'AWS', 'GCP', 'MongoDB Atlas', 'Oracle Cloud'
     ]
   }
 ];
 
+const coreDomains = [
+  'Cybersecurity', 'Digital Forensics', 'Biomedical AI', 'Fraud Detection', 'Audio/Video Intelligence'
+];
+
 const researchDomains = [
   'Deep Learning', 'Computer Vision', 'Generative AI', 'Multimodal AI',
-  'Explainable AI (XAI)', 'Trustworthy AI', 'Deepfake Detection', 'Digital Forensics',
-  'Cybersecurity', 'Behavioral Biometrics', 'Fraud & Spoofing Detection',
-  'Biomedical AI', 'AI Safety & Human-AI Interaction', 'MLOps & Reliable AI Systems'
+  'Explainable AI (XAI)', 'Trustworthy AI', 'Deepfake Detection', 'Behavioral Biometrics',
+  'Zero-Trust Security', 'AI Safety & Alignment', 'MLOps & Reliable Systems'
 ];
 
 export default function SkillsSection() {
@@ -88,26 +88,49 @@ export default function SkillsSection() {
             ))}
           </div>
 
-          {/* Research Domains Box */}
+          {/* Research & Application Domains Box */}
           <div className="bg-[#0a0a0a] border border-white/10 p-5 sm:p-6 md:p-8 rounded-sm">
             <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/5">
               <Sparkles className="w-5 h-5 text-red-500 shrink-0" />
               <div>
-                <h3 className="text-xs sm:text-sm font-bold uppercase tracking-widest text-white">14 Research Interests &amp; Domains</h3>
-                <p className="text-[10px] font-mono text-gray-400">Core areas of academic investigation and patented innovations</p>
+                <h3 className="text-xs sm:text-sm font-bold uppercase tracking-widest text-white">Application Domains &amp; Research Focus</h3>
+                <p className="text-[10px] font-mono text-gray-400">Specialized fields of deep learning deployment, patent inventions, and peer review</p>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 sm:gap-2.5">
-              {researchDomains.map((domain) => (
-                <span 
-                  key={domain}
-                  className="px-2.5 sm:px-3 py-1.5 bg-[#141414] border border-red-900/30 hover:border-red-600/60 text-xs font-mono text-gray-300 hover:text-white rounded-sm transition-all cursor-default flex items-center gap-1.5"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-600 shrink-0"></span>
-                  {domain}
-                </span>
-              ))}
+            {/* Resume Core Domains */}
+            <div className="mb-4">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-red-400 block mb-2 font-bold">
+                Core Domains (From Resume):
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {coreDomains.map((domain) => (
+                  <span 
+                    key={domain}
+                    className="px-3 py-1.5 bg-red-950/30 border border-red-800/50 text-xs font-mono text-white font-medium rounded-sm flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0"></span>
+                    {domain}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Research & System Interests */}
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-gray-500 block mb-2">
+                Specialized Research &amp; Methodology:
+              </span>
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                {researchDomains.map((domain) => (
+                  <span 
+                    key={domain}
+                    className="px-2.5 py-1 bg-[#141414] border border-white/5 text-[11px] font-mono text-gray-300 rounded-sm hover:text-white transition-all cursor-default"
+                  >
+                    {domain}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export default function Footer() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('work@raybanpranav.tech');
+    navigator.clipboard.writeText('raybanpranav@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -27,7 +27,7 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="mailto:work@raybanpranav.tech"
+              href="mailto:raybanpranav@gmail.com"
               className="px-5 py-2.5 bg-red-700 hover:bg-red-600 active:scale-95 text-white font-bold text-xs uppercase tracking-wider rounded-sm flex items-center gap-2 transition-all duration-200 shadow-lg cursor-pointer"
             >
               <span>Email Rayban</span>
@@ -46,7 +46,7 @@ export default function Footer() {
         {/* Col 2: Direct Contact Channels */}
         <div className="flex flex-col justify-center space-y-4 sm:space-y-6 lg:pl-6 font-mono">
           <a 
-            href="mailto:work@raybanpranav.tech"
+            href="mailto:raybanpranav@gmail.com"
             className="flex items-center gap-3 sm:gap-4 p-3 bg-[#0a0a0a] border border-white/5 hover:border-red-600/40 active:scale-[0.98] rounded-sm transition-all duration-200 group min-w-0"
           >
             <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-red-500 group-hover:border-red-500 transition-colors shrink-0">
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
             <div className="min-w-0 flex-1">
               <span className="text-[10px] text-gray-500 uppercase block">Email Address</span>
-              <span className="text-xs text-gray-200 group-hover:text-white transition-colors truncate block">work@raybanpranav.tech</span>
+              <span className="text-xs text-gray-200 group-hover:text-white transition-colors truncate block">raybanpranav@gmail.com</span>
             </div>
           </a>
 

@@ -64,11 +64,11 @@ export default function Hero() {
         className="relative z-30 flex flex-col sm:flex-row justify-between items-start sm:items-center text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.2em] pt-2 sm:pt-3 pb-2 sm:pb-1 px-1 gap-2 shrink-0"
       >
         <div className="flex flex-col leading-tight">
-          <span className="text-red-500 font-bold tracking-widest">AI/ML ENGINEER</span>
-          <span className="text-white font-medium tracking-wider">UI/UX CREATOR &amp; RESEARCHER</span>
+          <span className="text-red-500 font-bold tracking-widest">SOFTWARE DEVELOPER · AI/ML ENGINEER</span>
+          <span className="text-white font-medium tracking-wider">DEEP LEARNING · MLOPS ENGINEER</span>
         </div>
         <div className="flex items-center gap-2 text-gray-300">
-          <span className="tracking-widest text-[9px] sm:text-[11px]">AVAILABLE FOR FREELANCE &amp; ROLES</span>
+          <span className="tracking-widest text-[9px] sm:text-[11px]">AVAILABLE FOR ROLES &amp; RESEARCH</span>
           <span className="relative flex h-2 w-2 ml-1">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600" />
@@ -119,12 +119,11 @@ export default function Hero() {
             className="space-y-1.5"
           >
             <h3 className="text-red-500 font-bold uppercase tracking-widest text-xs md:text-[13px] leading-snug">
-              AI/ML ENGINEER &amp;<br />
-              UI/UX CREATOR
+              SOFTWARE DEVELOPER | AI/ML ENGINEER<br />
+              DEEP LEARNING &amp; MLOPS ENGINEER
             </h3>
             <p className="text-gray-300 text-xs md:text-[12px] leading-relaxed max-w-sm lg:max-w-[320px]">
-              I design and build stylish, user-focused AI systems and
-              research-driven applications. Published researcher at{' '}
+              Developing AI-driven applications, scalable software solutions, and production-grade MLOps pipelines using TensorFlow, PyTorch, and Google Gemini AI. Published researcher at{' '}
               <span className="text-white font-medium">IEEE COMPSAC &amp; IPTA 2026</span>{' '}
               and inventor on{' '}
               <span className="text-red-500 font-semibold">13 Indian patents</span>.
