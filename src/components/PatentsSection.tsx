@@ -157,6 +157,17 @@ export const patents: Patent[] = [
     inventors: 'Dr. Pushpa Gothwal; Rayban Pranav Mahesh; Tanisha Bagga; Udbhav Makkar; Divyam Goel; Pranjal Bajwa',
     category: 'Multimodal AI',
     domain: 'Affective Computing & Temporal Fusion Modeling'
+  },
+  {
+    id: '14',
+    num: '202641103606',
+    title: 'System for MRI-Based Alzheimer’s Severity Grading, Clinical Consistency Validation, Progression Forecasting, and Method Thereof',
+    filed: '27 August 2026',
+    published: '04 September 2026',
+    applicant: 'Vellore Institute of Technology',
+    inventors: 'Dr. Jaishree Jaikrishnan; Rayban Pranav Mahesh',
+    category: 'AI in Healthcare',
+    domain: 'MRI-Based Alzheimer’s Disease Analysis & Clinical Decision Support'
   }
 ];
 
@@ -181,12 +192,14 @@ export default function PatentsSection() {
   const filteredPatents = patents.filter(p => {
     const matchesCategory = selectedCategory === 'All' || 
       p.category === selectedCategory || 
+      (selectedCategory === 'Biomedical AI' && (p.category.includes('Biomedical') || p.category.includes('Healthcare'))) ||
       (selectedCategory === 'Computer Vision & Audio ML' && (p.category.includes('Computer Vision') || p.category.includes('Audio ML')));
       
     const query = searchQuery.toLowerCase();
     const matchesSearch = p.title.toLowerCase().includes(query) ||
                           p.num.includes(query) ||
                           p.domain.toLowerCase().includes(query) ||
+                          p.category.toLowerCase().includes(query) ||
                           p.inventors.toLowerCase().includes(query) ||
                           p.applicant.toLowerCase().includes(query);
     return matchesCategory && matchesSearch;
@@ -204,7 +217,7 @@ export default function PatentsSection() {
           <div className="flex items-center gap-2 mb-1">
             <span className="text-red-500 font-mono text-[10px] uppercase tracking-[0.25em]">Intellectual Property</span>
             <span className="px-2 py-0.5 bg-red-950/40 border border-red-800/40 text-red-400 font-mono text-[9px] rounded font-bold">
-              13 OFFICIAL INDIAN PATENTS
+              14 OFFICIAL INDIAN PATENTS
             </span>
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-widest">
@@ -212,7 +225,7 @@ export default function PatentsSection() {
           </h2>
         </div>
         <p className="text-xs text-gray-400 font-mono max-w-sm">
-          Inventor of 13 official Indian Patent applications filed through Vellore Institute of Technology across Deepfake Forensics, Multimodal AI, Zero-Trust Security, and Trustworthy AI.
+          Inventor of 14 official Indian Patent applications filed through Vellore Institute of Technology across Deepfake Forensics, Multimodal AI, Zero-Trust Security, and Trustworthy AI.
         </p>
       </div>
 
@@ -337,7 +350,7 @@ export default function PatentsSection() {
             onClick={() => setShowAll(!showAll)}
             className="group px-6 py-3 bg-[#0a0a0a] hover:bg-red-950/30 border border-red-900/60 hover:border-red-500 active:scale-95 text-gray-300 hover:text-white text-xs font-mono font-bold uppercase tracking-[0.2em] rounded-sm flex items-center gap-2.5 transition-all duration-200 shadow-md cursor-pointer"
           >
-            <span>{showAll ? 'Show Fewer Patents' : `View All 13 Patents (${filteredPatents.length - INITIAL_VISIBLE_COUNT} More)`}</span>
+            <span>{showAll ? 'Show Fewer Patents' : `View All ${patents.length} Patents (${filteredPatents.length - INITIAL_VISIBLE_COUNT} More)`}</span>
             {showAll ? (
               <ChevronUp className="w-4 h-4 text-red-500 group-hover:-translate-y-0.5 transition-transform" />
             ) : (

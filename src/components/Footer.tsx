@@ -112,7 +112,7 @@ export default function Footer() {
             <p className="text-xs font-mono text-gray-400 mb-6 leading-relaxed">
               B.Tech CSE (Software Systems) · VIT '27<br/>
               Samsung PRISM Research Intern<br/>
-              IEEE Access Peer Reviewer · 13 Patents
+              IEEE Access Peer Reviewer · 14 Patents
             </p>
           </div>
 

@@ -12,7 +12,7 @@ export default function Navbar() {
       <nav className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 text-[10px] text-gray-400">
         <a href="#experience" className="hover:text-white transition-colors py-0.5">Experience</a>
         <a href="#publications" className="hover:text-white transition-colors py-0.5">Publications</a>
-        <a href="#patents" className="hover:text-white transition-colors py-0.5">Patents (13)</a>
+        <a href="#patents" className="hover:text-white transition-colors py-0.5">Patents (14)</a>
         <a href="#projects" className="hover:text-white transition-colors py-0.5">Projects</a>
         <a href="#skills" className="hover:text-white transition-colors py-0.5">Skills</a>
         <a href="#education" className="hover:text-white transition-colors py-0.5">Education &amp; Certs</a>

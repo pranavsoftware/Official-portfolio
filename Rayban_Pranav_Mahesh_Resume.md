@@ -13,7 +13,7 @@
 
 ## Professional Summary
 
-Machine Learning Engineer with experience in developing AI-driven applications and scalable software solutions. Skilled in machine learning, deep learning, computer vision, and generative AI using TensorFlow, PyTorch, and Google Gemini AI. Proficient in MLOps, CI/CD, Docker, Kubernetes, and cloud platforms including AWS and GCP. Passionate about building reliable AI solutions for healthcare, finance, cybersecurity, and automation. Published researcher at IEEE COMPSAC 2026 and inventor of 13 patents.
+Machine Learning Engineer with experience in developing AI-driven applications and scalable software solutions. Skilled in machine learning, deep learning, computer vision, and generative AI using TensorFlow, PyTorch, and Google Gemini AI. Proficient in MLOps, CI/CD, Docker, Kubernetes, and cloud platforms including AWS and GCP. Passionate about building reliable AI solutions for healthcare, finance, cybersecurity, and automation. Published researcher at IEEE COMPSAC 2026 and inventor of 14 patents.
 
 ---
 
@@ -55,7 +55,7 @@ Jul '25 To Feb '26
 
 ---
 
-## Patents (13 Official Indian Patents)
+## Patents (14 Official Indian Patents)
 
 ### 1. Crowd Chaos Detection System for Crowd Safety Management Using Audio-Visual Signal
 - **Indian Patent Application No.:** `202541103106`
@@ -134,6 +134,12 @@ Jul '25 To Feb '26
 - **Filed:** 10 March 2026 | **Published:** 20 March 2026
 - **Applicant:** Vellore Institute of Technology
 - **Inventors:** Dr. Pushpa Gothwal; Rayban Pranav Mahesh; Tanisha Bagga; Udbhav Makkar; Divyam Goel; Pranjal Bajwa
+
+### 14. System for MRI-Based Alzheimer’s Severity Grading, Clinical Consistency Validation, Progression Forecasting, and Method Thereof
+- **Indian Patent Application No.:** `202641103606`
+- **Filed:** 27 August 2026 | **Published:** 04 September 2026
+- **Applicant:** Vellore Institute of Technology
+- **Inventors:** Dr. Jaishree Jaikrishnan; Rayban Pranav Mahesh
 
 ---
 

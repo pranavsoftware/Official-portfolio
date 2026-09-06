@@ -126,7 +126,7 @@ export default function Hero() {
               Developing AI-driven applications, scalable software solutions, and production-grade MLOps pipelines using TensorFlow, PyTorch, and Google Gemini AI. Published researcher at{' '}
               <span className="text-white font-medium">IEEE COMPSAC &amp; IPTA 2026</span>{' '}
               and inventor on{' '}
-              <span className="text-red-500 font-semibold">13 Indian patents</span>.
+              <span className="text-red-500 font-semibold">14 Indian patents</span>.
             </p>
           </motion.div>
 
@@ -177,7 +177,7 @@ export default function Hero() {
           {/* Stats Container: 3 cols on mobile/tablet, vertical stack on desktop */}
           <div className="grid grid-cols-3 lg:grid-cols-1 gap-2 sm:gap-4 lg:gap-3.5 w-full">
             
-            {/* Stat 1: 13+ PATENTS */}
+            {/* Stat 1: 14+ PATENTS */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -185,7 +185,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row lg:flex-row items-start sm:items-center gap-1.5 sm:gap-3 group cursor-default"
             >
               <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl text-red-500 leading-none min-w-[56px] sm:min-w-[68px] group-hover:text-red-400 transition-colors">
-                13<span className="text-lg sm:text-xl text-white font-light">+</span>
+                14<span className="text-lg sm:text-xl text-white font-light">+</span>
               </span>
               <p className="text-[9px] sm:text-[10px] text-gray-400 uppercase tracking-[0.18em] leading-tight">
                 PATENTS<br />

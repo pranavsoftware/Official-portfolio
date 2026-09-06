@@ -1,6 +1,6 @@
 # Official Portfolio — Rayban Pranav Mahesh
 
-> **AI/ML Engineer · Deep Learning Researcher · Inventor (13 Patents)**  
+> **AI/ML Engineer · Deep Learning Researcher · Inventor (14 Patents)**  
 > Published researcher at **IEEE COMPSAC & IPTA 2026** · **IEEE Access Peer Reviewer**
 
 ---
