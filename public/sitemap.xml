@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage & Research Archive -->
+  <url>
+    <loc>https://www.raybanpranav.tech/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/rayban_half.png</image:loc>
+      <image:title>Rayban Pranav Mahesh — AI/ML Engineer, Researcher &amp; Inventor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 01: Crowd Chaos Detection (App: 202541103106) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/crowd-chaos-detection</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/fig1_system_architecture.png</image:loc>
+      <image:title>Crowd Chaos Detection System Architecture — Patent 202541103106</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 02: Geo-Medicinal Intelligence (App: 202641059395) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/geo-medicinal-intelligence</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/patent2/fig1_integrated_pipeline.png</image:loc>
+      <image:title>Geo-Medicinal Intelligence System Pipeline — Patent 202641059395</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 03: Lip-Sync Authenticity Detection (App: 202541131828) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/lip-sync-authenticity</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/lip-sync-detection/fig1_system_architecture.jpeg</image:loc>
+      <image:title>Lip-Sync Authenticity Detection System Architecture — Patent 202541131828</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 04: Multi-Layer Spoofing Detection (App: 202641054502) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/network-spoofing</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/network-spoofing-detection/fig1_summary_dashboard.png</image:loc>
+      <image:title>Multi-Layer Spoofing Detection and Response Architecture — Patent 202641054502</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 05: Hindi-English Communication (App: 202641033897) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/hindi-english-communication</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/multimodal-hindi-english/fig1_system_architecture.png</image:loc>
+      <image:title>Adaptive Emotion-Aware Hindi-English Communication Architecture — Patent 202641033897</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 09: Audio Deepfake Detection (App: 202641027783) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/audio-deepfake</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/audio-deepfake/fig1_overall_system_architecture.png</image:loc>
+      <image:title>Multi-Domain Feature Fusion Audio Deepfake Detection — Patent 202641027783</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 10: Location-Filtered Service Platform (App: 202641027808) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/location-service</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/location-service/fig5_system_architecture_layered.png</image:loc>
+      <image:title>Location-Filtered Service Platform Architecture — Patent 202641027808</image:title>
+    </image:image>
+  </url>
+
+  <!-- Patent 14: Alzheimer's Severity Grading (App: 202641103606) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/alzheimers-mri</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/alzheimers-mri/fig_8_1_gradcam_heatmaps.png</image:loc>
+      <image:title>MRI Alzheimer's Severity Grading Grad-CAM Heatmaps — Patent 202641103606</image:title>
+    </image:image>
+  </url>
+</urlset>

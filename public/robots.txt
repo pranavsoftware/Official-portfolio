@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Allow: /patent-assets/
+
+# Host
+Host: https://www.raybanpranav.tech
+
+# Sitemaps
+Sitemap: https://www.raybanpranav.tech/sitemap.xml
