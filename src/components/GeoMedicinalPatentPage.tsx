@@ -6,6 +6,8 @@ import {
   MapPin, Pill, Network, Sparkles, Microscope, BarChart3, Database, FileText, ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { usePatentSEO } from '../hooks/usePatentSEO';
+import { getPatentBySlug } from '../data/patentMetadata';
 
 interface GeoMedicinalPatentPageProps {
   onBack: () => void;
@@ -19,6 +21,9 @@ interface ModalImage {
 }
 
 export default function GeoMedicinalPatentPage({ onBack }: GeoMedicinalPatentPageProps) {
+  // Dynamic SEO meta tags, Google Scholar citation tags, OpenGraph & Schema.org JSON-LD
+  usePatentSEO(getPatentBySlug('geo-medicinal-intelligence')!);
+
   // Lightbox modal state
   const [activeImage, setActiveImage] = useState<ModalImage | null>(null);
   const [copiedBibtex, setCopiedBibtex] = useState(false);

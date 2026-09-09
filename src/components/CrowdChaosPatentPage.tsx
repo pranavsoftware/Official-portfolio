@@ -5,6 +5,8 @@ import {
   Users, Building, Calendar, Layers, Activity, Zap, Copy, Check, ExternalLink
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { usePatentSEO } from '../hooks/usePatentSEO';
+import { getPatentBySlug } from '../data/patentMetadata';
 
 interface CrowdChaosPatentPageProps {
   onBack: () => void;
@@ -18,6 +20,9 @@ interface ModalImage {
 }
 
 export default function CrowdChaosPatentPage({ onBack }: CrowdChaosPatentPageProps) {
+  // Dynamic SEO meta tags, Google Scholar citation tags, OpenGraph & Schema.org JSON-LD
+  usePatentSEO(getPatentBySlug('crowd-chaos-detection')!);
+
   // Lightbox modal state
   const [activeImage, setActiveImage] = useState<ModalImage | null>(null);
   const [copiedBibtex, setCopiedBibtex] = useState(false);

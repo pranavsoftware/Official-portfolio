@@ -6,6 +6,8 @@ import {
   ScanFace, Info, Radio, Network, Terminal, Lock, RefreshCw, Filter, Server
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { usePatentSEO } from '../hooks/usePatentSEO';
+import { getPatentBySlug } from '../data/patentMetadata';
 
 interface NetworkSpoofingPatentPageProps {
   onBack: () => void;
@@ -19,6 +21,9 @@ interface ModalImage {
 }
 
 export default function NetworkSpoofingPatentPage({ onBack }: NetworkSpoofingPatentPageProps) {
+  // Dynamic SEO meta tags, Google Scholar citation tags, OpenGraph & Schema.org JSON-LD
+  usePatentSEO(getPatentBySlug('network-spoofing')!);
+
   // Lightbox modal state
   const [activeImage, setActiveImage] = useState<ModalImage | null>(null);
   const [copiedBibtex, setCopiedBibtex] = useState(false);

@@ -6,6 +6,8 @@ import {
   Search, ShieldAlert, Sparkles, Stethoscope, Clock
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { usePatentSEO } from '../hooks/usePatentSEO';
+import { getPatentBySlug } from '../data/patentMetadata';
 
 interface AlzheimersPatentPageProps {
   onBack: () => void;
@@ -19,6 +21,9 @@ interface ModalImage {
 }
 
 export default function AlzheimersPatentPage({ onBack }: AlzheimersPatentPageProps) {
+  // Dynamic SEO meta tags, Google Scholar citation tags, OpenGraph & Schema.org JSON-LD
+  usePatentSEO(getPatentBySlug('alzheimers-mri')!);
+
   // Lightbox modal state
   const [activeImage, setActiveImage] = useState<ModalImage | null>(null);
   const [copiedBibtex, setCopiedBibtex] = useState(false);

@@ -6,6 +6,8 @@ import {
   Sparkles, RefreshCw, SlidersHorizontal, ArrowRight, ShieldAlert, HeartHandshake
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { usePatentSEO } from '../hooks/usePatentSEO';
+import { getPatentBySlug } from '../data/patentMetadata';
 
 interface HindiEnglishPatentPageProps {
   onBack: () => void;
@@ -19,6 +21,9 @@ interface ModalImage {
 }
 
 export default function HindiEnglishPatentPage({ onBack }: HindiEnglishPatentPageProps) {
+  // Dynamic SEO meta tags, Google Scholar citation tags, OpenGraph & Schema.org JSON-LD
+  usePatentSEO(getPatentBySlug('hindi-english-communication')!);
+
   // Lightbox modal state
   const [activeImage, setActiveImage] = useState<ModalImage | null>(null);
   const [copiedBibtex, setCopiedBibtex] = useState(false);

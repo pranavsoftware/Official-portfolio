@@ -1,0 +1,593 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.raybanpranav.tech/#website",
+      "url": "https://www.raybanpranav.tech/",
+      "name": "Rayban Pranav Mahesh \u2014 Research & Patents",
+      "description": "Official research archive and portfolio of Rayban Pranav Mahesh, AI/ML Engineer and Inventor of 14 Indian Patents.",
+      "publisher": {
+        "@id": "https://www.raybanpranav.tech/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.raybanpranav.tech/#person",
+      "name": "Rayban Pranav Mahesh",
+      "url": "https://www.raybanpranav.tech/",
+      "image": "https://www.raybanpranav.tech/rayban_half.png",
+      "jobTitle": "AI/ML Engineer, Researcher & Patent Inventor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Vellore Institute of Technology",
+        "url": "https://vit.ac.in/"
+      },
+      "sameAs": [
+        "https://github.com/pranavsoftware"
+      ],
+      "knowsAbout": [
+        "Deepfake Detection",
+        "Audio Deepfake Forensics",
+        "Lip-Sync Verification",
+        "Network Spoofing Mitigation",
+        "Multimodal Cross-Lingual NLP",
+        "Medical Neuroimaging MRI",
+        "Zero-Trust AI Cybersecurity",
+        "Patent Inventions"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Indian Patents Published by Rayban Pranav Mahesh",
+      "description": "Complete portfolio of 14 published Indian Patents by the Intellectual Property Office, Government of India.",
+      "numberOfItems": 14,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Crowd Chaos Detection System for Crowd Safety Management Using Audio-Visual Signal",
+            "headline": "Crowd Chaos Detection System for Crowd Safety Management Using Audio-Visual Signal",
+            "patentNumber": "IN202541103106 A1",
+            "applicationNumber": "202541103106",
+            "datePublished": "2025-11-28",
+            "filingDate": "2025-10-26",
+            "description": "Multi-modal safety system combining real-time YOLO computer vision, facial emotion detection CNNs, and acoustic spectrogram intensity analysis to detect crowd chaos and stampedes.",
+            "url": "https://www.raybanpranav.tech/#/patent/crowd-chaos-detection",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Padma Priya R"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Divyam Goel"
+              },
+              {
+                "@type": "Person",
+                "name": "Tanisha Bagga"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Geo-Medicinal Intelligence System for Phytochemical Prediction and Personalized Plant Recommendation",
+            "headline": "Geo-Medicinal Intelligence System for Phytochemical Prediction and Personalized Plant Recommendation",
+            "patentNumber": "IN202641059395 A1",
+            "applicationNumber": "202641059395",
+            "datePublished": "2026-05-22",
+            "filingDate": "2026-05-10",
+            "description": "Geo-medicinal AI system utilizing Gaussian Process spatial regression, Bayesian Neural Networks with Monte Carlo dropout, and Graph Neural Networks for botanical potency prediction.",
+            "url": "https://www.raybanpranav.tech/#/patent/geo-medicinal-intelligence",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Jaishree Jaikrishnan"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Ajitesh Sharma"
+              },
+              {
+                "@type": "Person",
+                "name": "Vyom Sen"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "System for Lip-Sync Authenticity Detection Using Spatial, Spectral, and Deep-Learning Based Feature Fusion",
+            "headline": "System for Lip-Sync Authenticity Detection Using Spatial, Spectral, and Deep-Learning Based Feature Fusion",
+            "patentNumber": "IN202541131828 A1",
+            "applicationNumber": "202541131828",
+            "datePublished": "2026-01-02",
+            "filingDate": "2025-12-25",
+            "description": "Deepfake forensics system combining spatial facial landmark tracking, 2D FFT spectral anomaly analysis, and deep-learning spatio-temporal fusion for synthetic media detection.",
+            "url": "https://www.raybanpranav.tech/#/patent/lip-sync-authenticity",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Jaishree Jaikrishnan"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Aarya Ashish Nagvekar"
+              },
+              {
+                "@type": "Person",
+                "name": "Ajitesh Sharma"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "AI-Based Multi-Layer Spoofing Detection and Response System for Real-Time Network Security",
+            "headline": "AI-Based Multi-Layer Spoofing Detection and Response System for Real-Time Network Security",
+            "patentNumber": "IN202641054502 A1",
+            "applicationNumber": "202641054502",
+            "datePublished": "2026-05-15",
+            "filingDate": "2026-04-29",
+            "description": "Multi-tier zero-trust network cybersecurity system leveraging deep autoencoders, LSTM temporal anomaly tracking, and Deep Q-Network reinforcement learning agents.",
+            "url": "https://www.raybanpranav.tech/#/patent/network-spoofing",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Nupur Manasi"
+              },
+              {
+                "@type": "Person",
+                "name": "Karishma Rahaman"
+              },
+              {
+                "@type": "Person",
+                "name": "Marmik Pradip Kaila"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "A Real-Time Multimodal System for Adaptive Emotion-Aware Hindi-English Communication",
+            "headline": "A Real-Time Multimodal System for Adaptive Emotion-Aware Hindi-English Communication",
+            "patentNumber": "IN202641033897 A1",
+            "applicationNumber": "202641033897",
+            "datePublished": "2026-03-27",
+            "filingDate": "2026-03-20",
+            "description": "Cross-lingual bilingual translation system integrating YOLOv10 facial emotion recognition, acoustic prosodic sentiment modeling, and dynamic cross-modal attention.",
+            "url": "https://www.raybanpranav.tech/#/patent/hindi-english-communication",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Nupur Manasi"
+              },
+              {
+                "@type": "Person",
+                "name": "Mrinali Charhate"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Ashish Anil Sikaria"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Multi-Party Expense Settlement System with Graph-Based Optimization",
+            "headline": "Multi-Party Expense Settlement System with Graph-Based Optimization",
+            "patentNumber": "IN202641068108 A1",
+            "applicationNumber": "202641068108",
+            "datePublished": "2026-05-30",
+            "filingDate": "2026-05-30",
+            "description": "Graph-theoretic peer-to-peer expense settlement engine modeling debt relationships as network graphs to minimize transaction count across multi-party groups.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Santhi K"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "A System for Trust-Based Autonomous Dataset Validation and Integrity Assurance in Artificial Intelligence",
+            "headline": "A System for Trust-Based Autonomous Dataset Validation and Integrity Assurance in Artificial Intelligence",
+            "patentNumber": "IN202641062186 A1",
+            "applicationNumber": "202641062186",
+            "datePublished": "2026-05-29",
+            "filingDate": "2026-05-15",
+            "description": "Autonomous dataset verification and cryptographic proof framework certifying data provenance and detecting adversarial feature poisoning in ML workflows.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Santhi K"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "System and Method for Runtime Behavioral Verification and Permission Enforcement in Autonomous Artificial Intelligence Agents",
+            "headline": "System and Method for Runtime Behavioral Verification and Permission Enforcement in Autonomous Artificial Intelligence Agents",
+            "patentNumber": "IN202641097130 A1",
+            "applicationNumber": "202641097130",
+            "datePublished": "2026-08-14",
+            "filingDate": "2026-08-11",
+            "description": "Deterministic runtime containment architecture and verification sandbox intercepting autonomous agent tool calls and preventing privilege escalation.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Santhi K"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Multi-Domain Feature Fusion Based Deep Learning System for Audio Deepfake Detection",
+            "headline": "Multi-Domain Feature Fusion Based Deep Learning System for Audio Deepfake Detection",
+            "patentNumber": "IN202641027783 A1",
+            "applicationNumber": "202641027783",
+            "datePublished": "2026-03-20",
+            "filingDate": "2026-03-09",
+            "description": "Audio forensic classification system extracting spectral LFCC/CQCC features, phase coherence metrics, and wav2vec 2.0 representations fused via cross-branch self-attention.",
+            "url": "https://www.raybanpranav.tech/#/patent/audio-deepfake",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Mohanasundaram R"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Ajitesh Sharma"
+              },
+              {
+                "@type": "Person",
+                "name": "Hansaj Patidar"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Location-Filtered Service Platform with Bidirectional Rating and Image Verification",
+            "headline": "Location-Filtered Service Platform with Bidirectional Rating and Image Verification",
+            "patentNumber": "IN202641027808 A1",
+            "applicationNumber": "202641027808",
+            "datePublished": "2026-03-20",
+            "filingDate": "2026-03-09",
+            "description": "Geospatial service marketplace engine featuring boundary filtering, dual-layer live camera visual authentication against eKYC, and symmetric 3-metric mutual ratings.",
+            "url": "https://www.raybanpranav.tech/#/patent/location-service",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Mohanasundaram R"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Harsh Anand"
+              },
+              {
+                "@type": "Person",
+                "name": "Rishabh Vyas"
+              },
+              {
+                "@type": "Person",
+                "name": "Suraj Jha"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Multi-Modal Behavioral Biometrics and Ensemble Learning Framework for Bot Detection in Online Transaction Systems",
+            "headline": "Multi-Modal Behavioral Biometrics and Ensemble Learning Framework for Bot Detection in Online Transaction Systems",
+            "patentNumber": "IN202641027867 A1",
+            "applicationNumber": "202641027867",
+            "datePublished": "2026-03-20",
+            "filingDate": "2026-03-10",
+            "description": "Continuous authentication and anti-bot defense framework combining keystroke dynamics, pointer trajectory physics, and ensemble classifiers.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Anusha N"
+              },
+              {
+                "@type": "Person",
+                "name": "Sawant Jiya Pradeep"
+              },
+              {
+                "@type": "Person",
+                "name": "Dwarakadhish Vinod Patil"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Kunal Shivraj Bhosale"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "System and Method for Density-Adaptive Geo-Block Generation with Non-Competitive Business Synergy Scoring and Bundle Recommendation",
+            "headline": "System and Method for Density-Adaptive Geo-Block Generation with Non-Competitive Business Synergy Scoring and Bundle Recommendation",
+            "patentNumber": "IN202641027870 A1",
+            "applicationNumber": "202641027870",
+            "datePublished": "2026-03-20",
+            "filingDate": "2026-03-10",
+            "description": "Spatial clustering engine partitioning commercial districts into dynamic Voronoi geo-blocks, utilizing bipartite matching for non-competitive merchant synergy bundles.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Monash P"
+              },
+              {
+                "@type": "Person",
+                "name": "Samyak Nitesh Chhajed"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Madhav Juneja"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Emotion-Adaptive Artificial Intelligence Interaction System with Multimodal Fusion and Temporal Dynamics Modeling",
+            "headline": "Emotion-Adaptive Artificial Intelligence Interaction System with Multimodal Fusion and Temporal Dynamics Modeling",
+            "patentNumber": "IN202641027891 A1",
+            "applicationNumber": "202641027891",
+            "datePublished": "2026-03-20",
+            "filingDate": "2026-03-10",
+            "description": "Conversational intelligence platform combining transformer conversational state tracking with continuous valence-arousal emotional tracking to modulate response tone.",
+            "url": "https://www.raybanpranav.tech/#patents",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Pushpa Gothwal"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              },
+              {
+                "@type": "Person",
+                "name": "Tanisha Bagga"
+              },
+              {
+                "@type": "Person",
+                "name": "Udbhav Makkar"
+              },
+              {
+                "@type": "Person",
+                "name": "Divyam Goel"
+              },
+              {
+                "@type": "Person",
+                "name": "Pranjal Bajwa"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "System for MRI-Based Alzheimer\u2019s Severity Grading, Clinical Consistency Validation, Progression Forecasting, and Method Thereof",
+            "headline": "System for MRI-Based Alzheimer\u2019s Severity Grading, Clinical Consistency Validation, Progression Forecasting, and Method Thereof",
+            "patentNumber": "IN202641103606 A1",
+            "applicationNumber": "202641103606",
+            "datePublished": "2026-09-04",
+            "filingDate": "2026-08-27",
+            "description": "Clinical neuroimaging intelligence system utilizing DenseNet-121 with spatial attention for 4-class Alzheimer dementia grading (98.9% accuracy) and progression forecasting.",
+            "url": "https://www.raybanpranav.tech/#/patent/alzheimers-mri",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Dr. Jaishree Jaikrishnan"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
