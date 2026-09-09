@@ -33,6 +33,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Root temporary screenshots
+# Root temporary screenshots & working files
 localhost_*.png
 *.tmp
+Patent/
+scratch/

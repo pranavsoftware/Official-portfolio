@@ -22,7 +22,7 @@ export const patents: Patent[] = [
     filed: '26 October 2025',
     published: '28 November 2025',
     applicant: 'Vellore Institute of Technology',
-    inventors: 'Dr. Padma Priya R; Rayban Pranav Mahesh; Divyam Goel; Tanisha Bagga',
+    inventors: 'Dr. Padma Priya R; Rayban Pranav Mahesh; Divyam Goel; Tansiha Bagga',
     category: 'Computer Vision & Audio ML',
     domain: 'Multimodal Crowd Chaos Detection & Safety Management'
   },
@@ -61,7 +61,7 @@ export const patents: Patent[] = [
   },
   {
     id: '05',
-    num: '202641027867',
+    num: '202641033897',
     title: 'A Real-Time Multimodal System for Adaptive Emotion-Aware Hindi-English Communication',
     filed: '20 March 2026',
     published: '27 March 2026',
@@ -173,6 +173,7 @@ export const patents: Patent[] = [
 
 const categories = [
   'All',
+  'AI in Healthcare',
   'Deepfake Forensics',
   'Security & Forensics',
   'Multimodal AI',
@@ -305,23 +306,204 @@ export default function PatentsSection() {
                 </div>
 
                 {/* Inventors & Applicant Breakdown */}
-                <div className="space-y-2 mb-5 text-[11px] font-mono">
+                <div className="space-y-2 mb-4 text-[11px] font-mono">
                   <div className="flex items-start gap-2 text-gray-400">
                     <Users className="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5" />
-                    <div>
-                      <span className="text-gray-500 font-bold uppercase text-[9px] tracking-wider block">Inventors:</span>
-                      <span className="text-gray-200 leading-relaxed">{patent.inventors}</span>
+                    <div className="w-full">
+                      <span className="text-gray-500 font-bold uppercase text-[9px] tracking-wider block mb-1">Inventors:</span>
+                      {patent.id === '01' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Padma Priya R</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Divyam Goel</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Tansiha Bagga</span>
+                        </div>
+                      ) : patent.id === '02' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Jaishree Jaikrishnan</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Ajitesh Sharma</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Vyom Sen</span>
+                        </div>
+                      ) : patent.id === '03' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Jaishree Jaikrishnan</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Aarya Ashish Nagvekar</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Ajitesh Sharma</span>
+                        </div>
+                      ) : patent.id === '04' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Nupur Manasi</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Karishma Rahaman</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Marmik Pradip Kaila</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                        </div>
+                      ) : patent.id === '05' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Nupur Manasi</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Mrinali Charhate</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Ashish Anil Sikaria</span>
+                        </div>
+                      ) : patent.id === '14' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Jaishree Jaikrishnan</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                        </div>
+                      ) : (
+                        <span className="text-gray-200 leading-relaxed">{patent.inventors}</span>
+                      )}
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2 text-gray-400 pt-1">
                     <Building className="w-3.5 h-3.5 text-gray-500 shrink-0" />
                     <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className="text-gray-500 font-bold uppercase text-[9px] tracking-wider">Applicant:</span>
+                      <span className="text-gray-500 font-bold uppercase text-[9px] tracking-wider">Assignee / Applicant:</span>
                       <span className="text-gray-300 font-medium">{patent.applicant}</span>
+                      {(patent.id === '01' || patent.id === '02' || patent.id === '03' || patent.id === '04' || patent.id === '05' || patent.id === '14') && (
+                        <span className="px-1.5 py-0.5 bg-white/5 border border-white/10 rounded text-[9px] text-gray-400">Indian Patent</span>
+                      )}
                     </div>
                   </div>
                 </div>
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #01 */}
+                {patent.id === '01' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/crowd-chaos-detection';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Patent Details &amp; Visual Results</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #02 */}
+                {patent.id === '02' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/geo-medicinal-intelligence';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Geo-Medicinal System &amp; AI Breakdown</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #03 */}
+                {patent.id === '03' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/lip-sync-authenticity';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Lip-Sync Forensics &amp; Feature Fusion</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #04 */}
+                {patent.id === '04' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/network-spoofing';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Multi-Layer Network Spoofing &amp; AI Defense</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #05 */}
+                {patent.id === '05' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/hindi-english-communication';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Emotion-Aware Hindi-English Multimodal AI</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #09 */}
+                {patent.id === '09' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/audio-deepfake';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Multi-Domain Audio Deepfake Forensics</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #10 */}
+                {patent.id === '10' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/location-service';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore Geospatial Filtering &amp; Visual Verification</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #14 */}
+                {patent.id === '14' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/alzheimers-mri';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore MRI Alzheimer's Grading &amp; Clinical AI</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* Card Footer: Filing & Publication Dates */}

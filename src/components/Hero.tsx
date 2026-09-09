@@ -185,7 +185,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row lg:flex-row items-start sm:items-center gap-1.5 sm:gap-3 group cursor-default"
             >
               <span className="font-bebas text-4xl sm:text-5xl lg:text-6xl text-red-500 leading-none min-w-[56px] sm:min-w-[68px] group-hover:text-red-400 transition-colors">
-                14<span className="text-lg sm:text-xl text-white font-light">+</span>
+                10<span className="text-lg sm:text-xl text-white font-light">+</span>
               </span>
               <p className="text-[9px] sm:text-[10px] text-gray-400 uppercase tracking-[0.18em] leading-tight">
                 PATENTS<br />
