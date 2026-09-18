@@ -294,7 +294,7 @@ export default function PoisoningDetectionPatentPage({ onBack }: PoisoningDetect
 
   const bibtexCitation = `@patent{mahesh2026poisoningdetection,
   title     = {Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting},
-  author    = {Meenakshi and Jaikrishnan, Jaishree and Charhate, Mrinali Prafull and Mahesh, Rayban Pranav},
+  author    = {Dr. Meenakshi, Dr. Jaikrishnan, Jaishree, Mrinali Prafull Charhate, Rayban Pranav Mahesh},
   number    = {IN202641110083 A1},
   type      = {Patent Application},
   country   = {India},
@@ -452,33 +452,7 @@ export default function PoisoningDetectionPatentPage({ onBack }: PoisoningDetect
             </div>
           </div>
 
-          {/* Government IPO Progress Bar Tracker */}
-          <div className="bg-[#0c0c0c] border border-white/10 p-4 rounded-sm">
-            <div className="flex items-center justify-between mb-3 text-[11px] font-mono text-gray-400">
-              <span className="text-gray-300 font-semibold uppercase tracking-wider flex items-center gap-1.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                Official Indian Patent Office (IPO) Lifecycle Tracker
-              </span>
-              <span className="text-emerald-400 font-bold">Current Stage: Awaiting Request for Examination</span>
-            </div>
-            <div className="grid grid-cols-5 gap-2 text-center text-[10px] font-mono">
-              <div className="py-2 bg-emerald-950/70 border border-emerald-600/70 text-emerald-300 rounded font-bold">
-                ✓ Filed (14/09/2026)
-              </div>
-              <div className="py-2 bg-emerald-950/70 border border-emerald-600/70 text-emerald-300 rounded font-bold animate-pulse">
-                ✓ Published (18/09/2026)
-              </div>
-              <div className="py-2 bg-[#151515] border border-white/10 text-gray-400 rounded">
-                RQ Filed
-              </div>
-              <div className="py-2 bg-[#151515] border border-white/10 text-gray-500 rounded">
-                Under Examination
-              </div>
-              <div className="py-2 bg-[#151515] border border-white/10 text-gray-500 rounded">
-                Disposed (Grant)
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
