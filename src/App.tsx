@@ -21,12 +21,21 @@ import HindiEnglishPatentPage from './components/HindiEnglishPatentPage';
 import AudioDeepfakePatentPage from './components/AudioDeepfakePatentPage';
 import LocationServicePatentPage from './components/LocationServicePatentPage';
 import AlzheimersPatentPage from './components/AlzheimersPatentPage';
+import PoisoningDetectionPatentPage from './components/PoisoningDetectionPatentPage';
 
 export default function App() {
-  const [currentRoute, setCurrentRoute] = useState<'home' | 'patent-chaos' | 'patent-geomed' | 'patent-lipsync' | 'patent-spoofing' | 'patent-hindi-english' | 'patent-audio-deepfake' | 'patent-location-service' | 'patent-alzheimers'>(() => {
+  const [currentRoute, setCurrentRoute] = useState<'home' | 'patent-chaos' | 'patent-geomed' | 'patent-lipsync' | 'patent-spoofing' | 'patent-hindi-english' | 'patent-audio-deepfake' | 'patent-location-service' | 'patent-alzheimers' | 'patent-poisoning'>(() => {
     if (typeof window !== 'undefined') {
       const hash = window.location.hash.toLowerCase();
       const path = window.location.pathname.toLowerCase();
+      if (
+        hash.includes('patent/poisoning') || 
+        hash.includes('patent-poisoning') || 
+        hash.includes('202641110083') ||
+        path.includes('poisoning-detection')
+      ) {
+        return 'patent-poisoning';
+      }
       if (
         hash.includes('patent/crowd-chaos') || 
         hash.includes('patent-crowd-chaos') || 
@@ -170,6 +179,14 @@ export default function App() {
         setCurrentRoute('patent-alzheimers');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else if (
+        hash.includes('patent/poisoning') || 
+        hash.includes('patent-poisoning') || 
+        hash.includes('202641110083') ||
+        path.includes('poisoning-detection')
+      ) {
+        setCurrentRoute('patent-poisoning');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (
         hash === '#overview' ||
         hash === '#prior-art' ||
         hash === '#architecture' ||
@@ -228,6 +245,8 @@ export default function App() {
       title = 'Patent 202641027808 | Location-Filtered Service Platform with Bidirectional Rating & Image Verification — Rayban Pranav Mahesh';
     } else if (currentRoute === 'patent-alzheimers') {
       title = 'Patent 202641103606 | MRI-Based Alzheimer’s Severity Grading & Progression Forecasting — Rayban Pranav Mahesh';
+    } else if (currentRoute === 'patent-poisoning') {
+      title = 'Patent 202641110083 | Influence-Trajectory Poisoning Detection — Rayban Pranav Mahesh';
     }
     document.title = title;
 
@@ -307,6 +326,10 @@ export default function App() {
 
   if (currentRoute === 'patent-alzheimers') {
     return <AlzheimersPatentPage onBack={handleBackToHome} />;
+  }
+
+  if (currentRoute === 'patent-poisoning') {
+    return <PoisoningDetectionPatentPage onBack={handleBackToHome} />;
   }
 
   return (

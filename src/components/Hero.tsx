@@ -126,7 +126,7 @@ export default function Hero() {
               Developing AI-driven applications, scalable software solutions, and production-grade MLOps pipelines using TensorFlow, PyTorch, and Google Gemini AI. Published researcher at{' '}
               <span className="text-white font-medium">IEEE COMPSAC &amp; IPTA 2026</span>{' '}
               and inventor on{' '}
-              <span className="text-red-500 font-semibold">14 Indian patents</span>.
+              <span className="text-red-500 font-semibold">15 Indian patents</span>.
             </p>
           </motion.div>
 

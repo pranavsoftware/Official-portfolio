@@ -252,9 +252,38 @@ export const ALL_PATENTS_METADATA: PatentSEORecord[] = [
     pdfUrl: '/patent-assets/alzheimers-mri/Official_Gazette_Patent_202641103606.pdf',
     imageUrl: '/patent-assets/alzheimers-mri/fig_8_1_gradcam_heatmaps.png',
     ipcClasses: ['G16H 30/40', 'G16H 50/20', 'G06V 10/764']
+  },
+  {
+    id: 'patent-15',
+    slug: 'poisoning-detection',
+    title: 'Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting',
+    appNo: '202641110083',
+    publicationNo: 'IN202641110083 A1',
+    filingDate: '2026-09-14',
+    publicationDate: '2026-09-18',
+    inventors: ['Dr. Meenakshi', 'Dr. Jaishree Jaikrishnan', 'Mrinali Prafull Charhate', 'Rayban Pranav Mahesh'],
+    assignee: 'Vellore Institute of Technology',
+    abstract: 'An influence-trajectory-based poisoning detection and mitigation system for continually updated machine learning models, analyzing temporal influence trajectories across training checkpoints, evaluating estimator stability across independent approximations, clustering via UMAP/HDBSCAN, and executing closed-loop counterfactual quarantine with recursive lineage fingerprint matching.',
+    keywords: [
+      'Influence Trajectory Poisoning Detection',
+      'Machine Learning Security',
+      'Data Poisoning Defense',
+      'Multi-Estimator Stability Analysis',
+      'Counterfactual Quarantine',
+      'Approximate Unlearning',
+      'Lineage Fingerprinting',
+      'Continual Learning Security',
+      'Indian Patent 202641110083'
+    ],
+    canonicalPath: '#/patent/poisoning-detection',
+    pdfUrl: '/patent-assets/poisoning-detection/INFLUENCE-TRAJECTORY-BASED%20POISONING%20DETECTION.pdf',
+    imageUrl: '/patent-assets/poisoning-detection/system_architecture_diagram.png',
+    ipcClasses: ['G06N 3/08', 'G06F 21/55', 'G06N 20/00', 'H04L 9/40']
   }
 ];
+
 
 export const getPatentBySlug = (slug: string): PatentSEORecord | undefined => {
   return ALL_PATENTS_METADATA.find((p) => p.slug === slug || p.appNo === slug);
 };
+

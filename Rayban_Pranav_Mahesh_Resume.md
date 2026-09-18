@@ -13,7 +13,7 @@
 
 ## Professional Summary
 
-Machine Learning Engineer with experience in developing AI-driven applications and scalable software solutions. Skilled in machine learning, deep learning, computer vision, and generative AI using TensorFlow, PyTorch, and Google Gemini AI. Proficient in MLOps, CI/CD, Docker, Kubernetes, and cloud platforms including AWS and GCP. Passionate about building reliable AI solutions for healthcare, finance, cybersecurity, and automation. Published researcher at IEEE COMPSAC 2026 and inventor of 14 patents.
+Machine Learning Engineer with experience in developing AI-driven applications and scalable software solutions. Skilled in machine learning, deep learning, computer vision, and generative AI using TensorFlow, PyTorch, and Google Gemini AI. Proficient in MLOps, CI/CD, Docker, Kubernetes, and cloud platforms including AWS and GCP. Passionate about building reliable AI solutions for healthcare, finance, cybersecurity, and automation. Published researcher at IEEE COMPSAC 2026 and inventor of 15 patents.
 
 ---
 
@@ -55,7 +55,7 @@ Jul '25 To Feb '26
 
 ---
 
-## Patents (14 Official Indian Patents)
+## Patents (15 Official Indian Patents)
 
 ### 1. Crowd Chaos Detection System for Crowd Safety Management Using Audio-Visual Signal
 - **Indian Patent Application No.:** `202541103106`
@@ -140,6 +140,12 @@ Jul '25 To Feb '26
 - **Filed:** 27 August 2026 | **Published:** 04 September 2026
 - **Applicant:** Vellore Institute of Technology
 - **Inventors:** Dr. Jaishree Jaikrishnan; Rayban Pranav Mahesh
+
+### 15. Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting
+- **Indian Patent Application No.:** `202641110083`
+- **Filed:** 14 September 2026 | **Published:** 18 September 2026
+- **Applicant:** Vellore Institute of Technology
+- **Inventors:** Meenakshi; Dr. Jaishree Jaikrishnan; Mrinali Prafull Charhate; Rayban Pranav Mahesh
 
 ---
 

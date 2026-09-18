@@ -6,7 +6,7 @@
       "@id": "https://www.raybanpranav.tech/#website",
       "url": "https://www.raybanpranav.tech/",
       "name": "Rayban Pranav Mahesh \u2014 Research & Patents",
-      "description": "Official research archive and portfolio of Rayban Pranav Mahesh, AI/ML Engineer and Inventor of 14 Indian Patents.",
+      "description": "Official research archive and portfolio of Rayban Pranav Mahesh, AI/ML Engineer and Inventor of 15 Indian Patents.",
       "publisher": {
         "@id": "https://www.raybanpranav.tech/#person"
       }
@@ -40,8 +40,8 @@
     {
       "@type": "ItemList",
       "name": "Indian Patents Published by Rayban Pranav Mahesh",
-      "description": "Complete portfolio of 14 published Indian Patents by the Intellectual Property Office, Government of India.",
-      "numberOfItems": 14,
+      "description": "Complete portfolio of 15 published Indian Patents by the Intellectual Property Office, Government of India.",
+      "numberOfItems": 15,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -586,8 +586,48 @@
               }
             ]
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": [
+              "Patent",
+              "TechArticle"
+            ],
+            "name": "Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting",
+            "headline": "Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting",
+            "patentNumber": "IN202641110083 A1",
+            "applicationNumber": "202641110083",
+            "datePublished": "2026-09-18",
+            "filingDate": "2026-09-14",
+            "description": "An influence-trajectory-based poisoning detection and mitigation system for continually updated machine learning models, analyzing temporal influence trajectories across training checkpoints, evaluating estimator stability across independent approximations, clustering via UMAP/HDBSCAN, and executing closed-loop counterfactual quarantine with recursive lineage fingerprint matching.",
+            "url": "https://www.raybanpranav.tech/#/patent/poisoning-detection",
+            "assignee": {
+              "@type": "Organization",
+              "name": "Vellore Institute of Technology"
+            },
+            "inventor": [
+              {
+                "@type": "Person",
+                "name": "Meenakshi"
+              },
+              {
+                "@type": "Person",
+                "name": "Dr. Jaishree Jaikrishnan"
+              },
+              {
+                "@type": "Person",
+                "name": "Mrinali Prafull Charhate"
+              },
+              {
+                "@type": "Person",
+                "name": "Rayban Pranav Mahesh"
+              }
+            ]
+          }
         }
       ]
     }
   ]
-}
+}

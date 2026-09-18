@@ -108,4 +108,17 @@
       <image:title>MRI Alzheimer's Severity Grading Grad-CAM Heatmaps — Patent 202641103606</image:title>
     </image:image>
   </url>
+
+  <!-- Patent 15: Poisoning Detection with Multi Estimator Stability & Lineage Fingerprinting (App: 202641110083) -->
+  <url>
+    <loc>https://www.raybanpranav.tech/#/patent/poisoning-detection</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.raybanpranav.tech/patent-assets/poisoning-detection/system_architecture_diagram.png</image:loc>
+      <image:title>Influence-Trajectory-Based Poisoning Detection System Architecture — Patent 202641110083</image:title>
+    </image:image>
+  </url>
 </urlset>
+

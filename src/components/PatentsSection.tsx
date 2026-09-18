@@ -168,6 +168,17 @@ export const patents: Patent[] = [
     inventors: 'Dr. Jaishree Jaikrishnan; Rayban Pranav Mahesh',
     category: 'AI in Healthcare',
     domain: 'MRI-Based Alzheimer’s Disease Analysis & Clinical Decision Support'
+  },
+  {
+    id: '15',
+    num: '202641110083',
+    title: 'Influence-Trajectory-Based Poisoning Detection with Multi Estimator Stability and Lineage Fingerprinting',
+    filed: '14 September 2026',
+    published: '18 September 2026',
+    applicant: 'Vellore Institute of Technology',
+    inventors: 'Meenakshi; Dr. Jaishree Jaikrishnan; Mrinali Prafull Charhate; Rayban Pranav Mahesh',
+    category: 'Security & Forensics',
+    domain: 'ML Security & Influence-Trajectory Poisoning Defense'
   }
 ];
 
@@ -218,7 +229,7 @@ export default function PatentsSection() {
           <div className="flex items-center gap-2 mb-1">
             <span className="text-red-500 font-mono text-[10px] uppercase tracking-[0.25em]">Intellectual Property</span>
             <span className="px-2 py-0.5 bg-red-950/40 border border-red-800/40 text-red-400 font-mono text-[9px] rounded font-bold">
-              14 OFFICIAL INDIAN PATENTS
+              15 OFFICIAL INDIAN PATENTS
             </span>
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-widest">
@@ -226,7 +237,7 @@ export default function PatentsSection() {
           </h2>
         </div>
         <p className="text-xs text-gray-400 font-mono max-w-sm">
-          Inventor of 14 official Indian Patent applications filed through Vellore Institute of Technology across Deepfake Forensics, Multimodal AI, Zero-Trust Security, and Trustworthy AI.
+          Inventor of 15 official Indian Patent applications filed through Vellore Institute of Technology across Deepfake Forensics, Multimodal AI, Zero-Trust Security, and Trustworthy AI.
         </p>
       </div>
 
@@ -351,6 +362,13 @@ export default function PatentsSection() {
                           <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Jaishree Jaikrishnan</span>
                           <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
                         </div>
+                      ) : patent.id === '15' ? (
+                        <div className="flex flex-wrap gap-1.5 pt-0.5">
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Meenakshi</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Dr. Jaishree Jaikrishnan</span>
+                          <span className="px-2 py-0.5 bg-[#161616] border border-white/10 rounded text-gray-200 text-[10px]">Mrinali Charhate</span>
+                          <span className="px-2 py-0.5 bg-red-950/40 border border-red-700/50 rounded text-red-300 font-bold text-[10px]">Rayban Pranav Mahesh</span>
+                        </div>
                       ) : (
                         <span className="text-gray-200 leading-relaxed">{patent.inventors}</span>
                       )}
@@ -362,7 +380,7 @@ export default function PatentsSection() {
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className="text-gray-500 font-bold uppercase text-[9px] tracking-wider">Assignee / Applicant:</span>
                       <span className="text-gray-300 font-medium">{patent.applicant}</span>
-                      {(patent.id === '01' || patent.id === '02' || patent.id === '03' || patent.id === '04' || patent.id === '05' || patent.id === '14') && (
+                      {(patent.id === '01' || patent.id === '02' || patent.id === '03' || patent.id === '04' || patent.id === '05' || patent.id === '14' || patent.id === '15') && (
                         <span className="px-1.5 py-0.5 bg-white/5 border border-white/10 rounded text-[9px] text-gray-400">Indian Patent</span>
                       )}
                     </div>
@@ -500,6 +518,23 @@ export default function PatentsSection() {
                       className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
                     >
                       <span>Explore MRI Alzheimer's Grading &amp; Clinical AI</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </button>
+                  </div>
+                )}
+
+                {/* Featured Patent Deep Dive CTA Button for Patent #15 */}
+                {patent.id === '15' && (
+                  <div className="mb-4">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.location.hash = '#/patent/poisoning-detection';
+                      }}
+                      className="w-full py-2.5 px-3 bg-red-950/40 hover:bg-red-900/60 border border-red-700/60 hover:border-red-500 text-white text-xs font-mono font-bold rounded-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md group/btn"
+                    >
+                      <span>Explore ML Poisoning Detection &amp; Lineage Fingerprinting</span>
                       <ExternalLink className="w-3.5 h-3.5 text-red-400 group-hover/btn:translate-x-0.5 transition-transform" />
                     </button>
                   </div>
